@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+body {
+  background-image: url("resource/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#road {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#st {
+  width: 130%;
+  position: fixed;
+  bottom: 137px;
+  z-index: 10;
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+#cara {
+  z-index: 12;
+  position: fixed;
+  bottom: 215px;
+  animation: cm 22s ease infinite;
+}
+
+#carb {
+  z-index: 13;
+  position: fixed;
+  bottom: 100px;
+  animation: cm 20s linear infinite;
+}
+
+#carc {
+  z-index: 12;
+  position: fixed;
+  bottom: 170px;
+  animation: cm 19s cubic-bezier(.49, -0.01, .34, .77) infinite;
+}
+
+#ct {
+  position: fixed;
+  right: 0;
+  width: 380vw;
+  left: 0;
+  bottom: 285px;
+  animation: ctm 100s linear infinite;
+  z-index: 20;
+}
+
+@keyframes ctm {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-40%);
+  }
+}
+
+.car {
+  width: 170px;
+}
+
+.tyre {
+  position: absolute;
+  width: 35px;
+  animation: roty 0.3s linear infinite;
+}
+
+.oneo {
+  left: 110px;
+  bottom: -7px;
+}
+
+.onet {
+  left: 25px;
+  bottom: -7px;
+}
+
+.twoo {
+  left: 125px;
+  bottom: -10px;
+}
+
+.twot {
+  left: 10px;
+  bottom: -11px;
+}
+
+.tho {
+  left: 123px;
+  bottom: -8px;
+}
+
+.tht {
+  left: 13px;
+  bottom: -8px;
+}
+
+@keyframes roty {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes cm {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(1700px);
+  }
+}
+
+.plane {
+  z-index: 12;
+  width: 100px;
+  animation: pm 30s linear infinite;
+}
+
+@keyframes pm {
+  0% {
+    transform: translateX(-200px) rotateZ(10deg) translateY(0px);
+  }
+
+  23% {
+    transform: rotateZ(15deg) translateX(150px) translateY(100px);
+  }
+
+  45% {
+    transform: rotateZ(0deg) translateX(500px) translateY(200px);
+  }
+
+  70% {
+    transform: rotateZ(-3deg) translateX(1100px) translateY(200px);
+  }
+
+  85% {
+    transform: rotateZ(-10deg) translateX(1450px) translateY(200px);
+  }
+
+  100% {
+    transform: rotateZ(-40deg) translateX(1500px) translateY(200px);
+  }
+}
